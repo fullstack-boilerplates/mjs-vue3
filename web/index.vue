@@ -3,13 +3,17 @@
 </template>
 
 <script>
+import { ref } from 'vue'
 import { hello } from "../apis/hello";
+
 export default {
-  data(){
-    return { message: "loading..." }
-  },
-  mounted: async function () {
-    this.message = await hello("world");
-  }
-};
+    setup() {
+        const message = ref("loading...")
+        hello('world').then( x=>message.value=x )
+
+        return {
+            message
+        }
+    }
+}
 </script>

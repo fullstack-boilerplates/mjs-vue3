@@ -1,7 +1,4 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import Index from './index.vue'
 
-new Vue({
-  el: document.getElementById('vue-root'),
-  render: h => h(Index)
-})
+createApp(Index).mount(document.getElementById('vue-root'))

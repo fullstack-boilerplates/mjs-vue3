@@ -1,5 +1,5 @@
 {
-  "name": "mjs-vue2",
+  "name": "mjs-vue3",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -22,8 +22,8 @@
     "@babel/plugin-transform-runtime": "^7.14.5",
     "@babel/preset-env": "^7.14.5",
     "babel-loader": "^8.2.2",
-    "vue": "^2.6.14",
-    "vue-loader": "^15.9.8",
+    "vue": "^3.2.20",
+    "vue-loader": "^16.8.1",
     "vue-template-compiler": "^2.6.14"
   }
 }
